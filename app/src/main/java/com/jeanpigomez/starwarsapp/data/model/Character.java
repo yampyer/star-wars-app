@@ -8,10 +8,11 @@ import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
 import android.support.annotation.NonNull;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 @Entity(tableName = Config.CHARACTER_TABLE_NAME)
-public class Character {
+public class Character implements Serializable {
 
     @SerializedName("name")
     @PrimaryKey

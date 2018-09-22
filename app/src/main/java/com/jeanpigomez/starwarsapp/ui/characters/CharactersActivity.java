@@ -1,7 +1,6 @@
 package com.jeanpigomez.starwarsapp.ui.characters;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -16,6 +15,7 @@ import android.widget.TextView;
 import com.jeanpigomez.starwarsapp.R;
 import com.jeanpigomez.starwarsapp.data.model.Character;
 import com.jeanpigomez.starwarsapp.ui.base.BaseActivity;
+import com.jeanpigomez.starwarsapp.ui.characterdetails.CharacterDetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,8 +116,8 @@ public class CharactersActivity extends BaseActivity implements CharactersContra
     }
 
     @Override public void showCharacterDetail(Character character) {
-        Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(character.getHomeworldURI()));
+        Intent intent = new Intent(this, CharacterDetailsActivity.class);
+        intent.putExtra("CHARACTER", character);
         startActivity(intent);
     }
 
