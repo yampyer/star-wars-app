@@ -9,4 +9,7 @@
     <string name="search">Search</string>
     <string name="search_hint">Enter character\'s name</string>
     <string name="msg_empty_search_result">No result found.</string>
+    <string name="homeworld">Homeworld:</string>
+    <string name="films">Films:</string>
+    <string name="vehicles">Vehicles:</string>
 </resources>
