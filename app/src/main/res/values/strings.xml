@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StarWarsApp</string>
+    <string name="name">Name:</string>
+    <string name="height">Height:</string>
+    <string name="mass">Mass:</string>
+    <string name="birth_year">Birth Year:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="msg_no_data">No data returned. Pull to refresh.</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Enter character\'s name</string>
+    <string name="msg_empty_search_result">No result found.</string>
+</resources>
